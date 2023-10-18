@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Chat</title>
+</head>
+<body>
+    <div class="users-box" >
+        <ul id="users"></ul>
+    </div><br>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="client.js"></script>
+<div>
+    <div class="users-box">
+        <label for="name">Room</label>
+        <input id="roomInput" placeholder="Enter room name" /><br>
+        <label for="name">Username</label>
+        <input id="usernameInput" name="name" value=<%= name %> /><br><br>
+        <button id="joinRoom">Join Room</button>
+    
+    </div>
+    <div class="messages" id="messages">   </div>
+</div>
+
+<div class="container">
+    <h3>[Send Message]</h3>
+  <input id="messageInput" autocomplete="on" /><br><br>
+  <button id="chat-message">chat message</button>
+  
+</div>
+
+</body>
+</html>

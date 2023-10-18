@@ -1,0 +1,43 @@
+<!-- HTML file -->
+<html>
+<head>
+  <title>Edit Info</title>
+  <!-- Link to the CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Edit Your Profile</h1>
+    <!-- Form element -->
+    <form id="edit-info-form" action="/edit-info" method="POST">
+      <!-- Input fields -->
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" value=<%= name %> required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" value=<%= email %> required>
+      </div>
+      <div class="form-group">
+        <label for="email">Age</label>
+        <input type="age" id="age" name="age" value=<%= age %> required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+      </div>
+      <!-- Button element -->
+      <button type="submit" id="submit-button">Save Changes</button>
+    </form>
+    <!-- Error message element -->
+    <p id="error-message"></p>
+  </div>
+  <!-- Link to the JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
